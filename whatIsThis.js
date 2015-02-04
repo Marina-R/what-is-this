@@ -63,7 +63,7 @@ var confusing = {
 
 
 // * Problem 2
-// inAnObject.test1('face', 'book');
+window.whatIsThis('hello', 'world');
 // * "this" is ...
 // * because ...
 
@@ -71,7 +71,7 @@ var confusing = {
 
 
 // * Problem 3
-// inAnObject.anotherObject.test1('twitter', 'book');
+// inAnObject.test1('face', 'book');
 // * "this" is ...
 // * because ...
 
@@ -79,7 +79,7 @@ var confusing = {
 
 
 // * Problem 4
-// inAnObject.anotherObject.test2('twitter', 'book');
+// inAnObject.anotherObject.test1('twitter', 'book');
 // * "this" is ...
 // * because ...
 
@@ -87,7 +87,7 @@ var confusing = {
 
 
 // * Problem 5
-// whatIsThis.call();
+// inAnObject.anotherObject.test2('twitter', 'book');
 // * "this" is ...
 // * because ...
 
@@ -95,7 +95,7 @@ var confusing = {
 
 
 // * Problem 6
-// whatIsThis.call(trickyTricky);
+// whatIsThis.call();
 // * "this" is ...
 // * because ...
 
@@ -103,7 +103,7 @@ var confusing = {
 
 
 // * Problem 7
-// whatIsThis.call(trickyTricky, 'nice', 'job');
+// whatIsThis.call(trickyTricky);
 // * "this" is ...
 // * because ...
 
@@ -111,7 +111,7 @@ var confusing = {
 
 
 // * Problem 8
-// whatIsThis.call(confusing);
+// whatIsThis.call(trickyTricky, 'nice', 'job');
 // * "this" is ...
 // * because ...
 
@@ -119,7 +119,7 @@ var confusing = {
 
 
 // * Problem 9
-// whatIsThis.call(confusing, 'hello');
+// whatIsThis.call(confusing);
 // * "this" is ...
 // * because ...
 
@@ -127,7 +127,7 @@ var confusing = {
 
 
 // * Problem 10
-// whatIsThis.apply(trickyTricky);
+// whatIsThis.call(confusing, 'hello');
 // * "this" is ...
 // * because ...
 
@@ -135,7 +135,7 @@ var confusing = {
 
 
 // * Problem 11
-// whatIsThis.apply(confusing, ['nice', 'job']);
+// whatIsThis.apply(trickyTricky);
 // * "this" is ...
 // * because ...
 
@@ -143,7 +143,7 @@ var confusing = {
 
 
 // * Problem 12
-// whatIsThis.apply(confusing, 'nice', 'job');
+// whatIsThis.apply(confusing, ['nice', 'job']);
 // * "this" is ...
 // * because ...
 
@@ -151,7 +151,7 @@ var confusing = {
 
 
 // * Problem 13
-// inAFunction('what will', 'happen?');
+// whatIsThis.apply(confusing, 'nice', 'job');
 // * "this" is ...
 // * because ...
 
@@ -159,7 +159,7 @@ var confusing = {
 
 
 // * Problem 14
-// inAFunction.test3('A', 'B');
+// inAFunction('what will', 'happen?');
 // * "this" is ...
 // * because ...
 
@@ -167,7 +167,7 @@ var confusing = {
 
 
 // * Problem 15
-// var newObject = new inAFunction('what will', 'happen?');
+// inAFunction.test3('A', 'B');
 // * "this" is ...
 // * because ...
 
@@ -176,7 +176,6 @@ var confusing = {
 
 // * Problem 16
 // var newObject = new inAFunction('what will', 'happen?');
-// newObject.test3('C', 'D');
 // * "this" is ...
 // * because ...
 
@@ -184,7 +183,8 @@ var confusing = {
 
 
 // * Problem 17
-// inAnObject.test1.call(trickyTricky, 'face', 'book');
+// var newObject = new inAFunction('what will', 'happen?');
+// newObject.test3('C', 'D');
 // * "this" is ...
 // * because ...
 
@@ -192,6 +192,14 @@ var confusing = {
 
 
 // * Problem 18
+// inAnObject.test1.call(trickyTricky, 'face', 'book');
+// * "this" is ...
+// * because ...
+
+
+
+
+// * Problem 19
 // inAnObject.anotherObject.test2.apply(confusing, ['foo', 'bar']);
 // * "this" is ...
 // * because ...
