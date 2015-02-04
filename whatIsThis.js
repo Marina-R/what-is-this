@@ -77,7 +77,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 3
+// * Problem 4
 // whatIsThis.call(trickyTricky);
 // * "this" is ...
 // * because ...
@@ -85,7 +85,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 4
+// * Problem 5
 // whatIsThis.call(trickyTricky, 'nice', 'job');
 // * "this" is ...
 // * because ...
@@ -93,7 +93,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 5
+// * Problem 6
 // whatIsThis.call(confusing);
 // * "this" is ...
 // * because ...
@@ -101,7 +101,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 5
+// * Problem 7
 // whatIsThis.call(confusing, 'hello');
 // * "this" is ...
 // * because ...
@@ -109,7 +109,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 6
+// * Problem 8
 // whatIsThis.apply(trickyTricky);
 // * "this" is ...
 // * because ...
@@ -117,7 +117,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 7
+// * Problem 9
 // whatIsThis.apply(confusing, ['nice', 'job']);
 // * "this" is ...
 // * because ...
@@ -125,7 +125,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 8
+// * Problem 10
 // inAFunction('what will', 'happen?');
 // * "this" is ...
 // * because ...
@@ -133,7 +133,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 9
+// * Problem 11
 // inAFunction.test3('A', 'B');
 // * "this" is ...
 // * because ...
@@ -141,7 +141,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 10
+// * Problem 12
 // var newObject = new inAFunction('what will', 'happen?');
 // * "this" is ...
 // * because ...
@@ -149,7 +149,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 11
+// * Problem 13
 // newObject.test3('C', 'D');
 // * "this" is ...
 // * because ...
@@ -157,7 +157,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 12
+// * Problem 14
 // inAnObject.test1.call(trickyTricky, 'face', 'book');
 // * "this" is ...
 // * because ...
@@ -165,7 +165,7 @@ whatIsThis('hello', 'world');
 
 
 
-// * Problem 13
+// * Problem 15
 // inAnObject.anotherObject.test2.apply(confusing, ['foo', 'bar']);
 // * "this" is ...
 // * because ...
