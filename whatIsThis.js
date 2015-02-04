@@ -17,6 +17,7 @@ var inAnObject = {
 };
 
 var inAFunction = function(a, b) {
+	this.name = 'Sally';
 	whatIsThis(a, b);
 };
 
@@ -54,7 +55,7 @@ var confusing = {
 // started.
 
 // * Problem 1
-whatIsThis('hello', 'world');
+// whatIsThis('hello', 'world');
 // * "this" is ...
 // * because ...
 
@@ -78,7 +79,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 4
-// whatIsThis.call(trickyTricky);
+// inAnObject.anotherObject.test2('twitter', 'book');
 // * "this" is ...
 // * because ...
 
@@ -86,7 +87,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 5
-// whatIsThis.call(trickyTricky, 'nice', 'job');
+// whatIsThis.call();
 // * "this" is ...
 // * because ...
 
@@ -94,7 +95,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 6
-// whatIsThis.call(confusing);
+// whatIsThis.call(trickyTricky);
 // * "this" is ...
 // * because ...
 
@@ -102,7 +103,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 7
-// whatIsThis.call(confusing, 'hello');
+// whatIsThis.call(trickyTricky, 'nice', 'job');
 // * "this" is ...
 // * because ...
 
@@ -110,7 +111,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 8
-// whatIsThis.apply(trickyTricky);
+// whatIsThis.call(confusing);
 // * "this" is ...
 // * because ...
 
@@ -118,7 +119,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 9
-// whatIsThis.apply(confusing, ['nice', 'job']);
+// whatIsThis.call(confusing, 'hello');
 // * "this" is ...
 // * because ...
 
@@ -126,7 +127,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 10
-// inAFunction('what will', 'happen?');
+// whatIsThis.apply(trickyTricky);
 // * "this" is ...
 // * because ...
 
@@ -134,7 +135,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 11
-// inAFunction.test3('A', 'B');
+// whatIsThis.apply(confusing, ['nice', 'job']);
 // * "this" is ...
 // * because ...
 
@@ -142,7 +143,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 12
-// var newObject = new inAFunction('what will', 'happen?');
+// whatIsThis.apply(confusing, 'nice', 'job');
 // * "this" is ...
 // * because ...
 
@@ -150,7 +151,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 13
-// newObject.test3('C', 'D');
+// inAFunction('what will', 'happen?');
 // * "this" is ...
 // * because ...
 
@@ -158,7 +159,7 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 14
-// inAnObject.test1.call(trickyTricky, 'face', 'book');
+// inAFunction.test3('A', 'B');
 // * "this" is ...
 // * because ...
 
@@ -166,6 +167,31 @@ whatIsThis('hello', 'world');
 
 
 // * Problem 15
+// var newObject = new inAFunction('what will', 'happen?');
+// * "this" is ...
+// * because ...
+
+
+
+
+// * Problem 16
+// var newObject = new inAFunction('what will', 'happen?');
+// newObject.test3('C', 'D');
+// * "this" is ...
+// * because ...
+
+
+
+
+// * Problem 17
+// inAnObject.test1.call(trickyTricky, 'face', 'book');
+// * "this" is ...
+// * because ...
+
+
+
+
+// * Problem 18
 // inAnObject.anotherObject.test2.apply(confusing, ['foo', 'bar']);
 // * "this" is ...
 // * because ...
